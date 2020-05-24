@@ -2,3 +2,8 @@
 
 hub checkout ${BRANCH}
 hub release create -a ./${APP_FOLDER}/build/outputs/apk/release/*-release.apk -m "Release - ${VERSION_NAME}" $(date +%Y%m%d%H%M%S)
+
+curl -F "file=@{${APP_FOLDER}/build/outputs/apk/release/*-release.apk}" \
+        -F "uKey={$uKey}" \
+        -F "_api_key={$apiKey}" \
+        https://www.pgyer.com/apiv1/app/upload
