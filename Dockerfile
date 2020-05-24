@@ -12,6 +12,7 @@ LABEL "maintainer"="ShowMeThe"
 RUN apt update \
 	&& apt -y upgrade \
 	&& apt install -y hub \
+	&& apt-get install curl\
 	&& apt autoremove \
 	&& apt autoclean \
 	&& apt clean
