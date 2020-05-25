@@ -12,7 +12,7 @@ curl -F "file=@$local" \
         -F "_api_key=${apiKey}" \
         https://www.pgyer.com/apiv1/app/upload
 ```
-Rember add the code in your ./app/build.gradle
+Remember add the code in your ./app/build.gradle
 ```
 buildTypes{
     release {
