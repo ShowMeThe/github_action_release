@@ -2,11 +2,11 @@ name: "Release APK"
 branding:
   icon: "package"
   color: "red"
-description: "Build & Publish Release APK on Github"
+description: "Build & Publish Release APK on Github and www.pgyer.com"
 author: "ShoMeThe"
 inputs:
   GITHUB_TOKEN:
-    description: "Github secret token to allow automated publishing of APK to release."
+    description: "Easy way to allow automated publishing of APK to release and the www.pgyer.com"
 runs:
   using: "docker"
   image: "Dockerfile"
