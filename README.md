@@ -1,4 +1,4 @@
-### A Example to build a releas apk by Github Action 
+### A Example to build a release apk by Github Action 
 
 Example:
 ```
